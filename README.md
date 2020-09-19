@@ -1,6 +1,6 @@
 # aks-terraform
 
-This is to create an AKS Cluster using Terraform. I have used Visual Studio Code to create my file using intellisense extension for Terraform.
+This is to create an AKS Cluster using Terraform. I have used Visual Studio Code to create my files using intellisense extension for Terraform.
 
 https://code.visualstudio.com/docs/editor/intellisense 
 
