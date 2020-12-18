@@ -80,3 +80,83 @@ variable "enable_log_analytics_workspace" {
   description = "Enable the creation of azurerm_log_analytics_workspace and azurerm_log_analytics_solution or not"
   default     = true
 }
+
+variable "default_nodepool_name" {
+    default = "akstest"
+}
+
+variable "kubernetes_version" {
+    default = "1.18.10"
+}
+
+variable "max_pods" {    
+    default = 110
+}
+
+variable "os_disk_size_gb" {    
+    default = 30
+}
+
+variable "os_type" {    
+    default = "Linux"
+}
+
+variable "availability_zones" {    
+    default = []
+}
+
+variable "node_taints" {    
+    default = []
+}
+
+variable "node_labels" {    
+    default = {"autoscale":"true"}
+}
+
+variable "enable_auto_scaling" {    
+    default = "true"
+}
+
+variable "min_count" {    
+    default = 1
+}
+
+variable "max_count" {    
+    default = 3
+}
+
+variable "balance_similar_node_groups" {
+    default = "false"
+}
+
+variable "max_graceful_termination_sec" {
+    default = 600
+}
+
+variable "scale_down_delay_after_add" {
+    default = "10m"
+}
+
+variable "scale_down_delay_after_delete" {
+    default = "10s"
+}
+
+variable "scale_down_delay_after_failure" {
+    default = "3m"
+}
+
+variable "scan_interval" {
+    default = "10s"
+}
+
+variable "scale_down_unneeded" {
+    default = "10m"
+}
+
+variable "scale_down_unready" {
+    default = "20m"
+}
+
+variable "scale_down_utilization_threshold" {
+    default = "0.5"
+}
