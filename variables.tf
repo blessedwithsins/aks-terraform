@@ -43,7 +43,7 @@ variable "admin_username" {
   description = "The username of the local administrator to be created on the Kubernetes cluster"
 }
 
-variable "agent_size" {
+variable "vm_size" {
   default     = "Standard_D4_v3"
   description = "The default virtual machine size for the Kubernetes agents"
 }
